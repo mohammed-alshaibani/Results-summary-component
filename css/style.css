@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 900px;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+.result, .summary {
+    flex: 1;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+    background-image: linear-gradient(#7655FE, #7655FE);
+    text-align: center;
+    color: #fff;
+}
+
+.result__title {
+    font-size: 1.5rem;
+    color: #B285FE;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.result__count {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    padding: 1.5rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+
+.result__score {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.result__total {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+}
+
+.result__paragraph-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.result__paragraph {
+    font-size: 1.125rem;
+    color: hsla(221, 100%, 96%, 0.7);
+}
+
+.summary__title {
+    font-size: 1.5rem;
+    color: #303B5A;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.summary__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.summary__listitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f9fafe;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+}
+
+.summary__listitem img {
+    width: 32px;
+    height: 32px;
+}
+
+.summary__listitem-title, .summary__listitem-score {
+    font-weight: 600;
+    color: #303B5A;
+}
+
+.summary__listitem-score {
+    font-size: 1.25rem;
+}
+
+.summary__listitem-total {
+    color: #99b0f8;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #303B5A;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+button:hover {
+    background-color: #4a4f77;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result, .summary {
+        width: 100%;
+    }
+}
