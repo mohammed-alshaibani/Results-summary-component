@@ -6,8 +6,6 @@
 
 This project is a **Frontend Mentor** challenge that involves creating a results summary component using **HTML** and **CSS**. The component displays test results in a clean, structured layout and allows users to practice styling, layout, and accessibility.
 
-![Preview of Results Summary Component](./assets/images/preview.png) <!-- Replace with actual preview image path -->
-
 ## Live Demo
 
 Check out the live demo on GitHub Pages: [Results Summary Component](https://mohammed-alshaibani.github.io/Results-summary-component/)
